@@ -47,10 +47,26 @@ const policies = [
 ];
 
 const socialLinks = [
-  { icon: FaFacebookF, href: "/" },
-  { icon: FaInstagram, href: "/" },
-  { icon: FaLinkedinIn, href: "/" },
-  { icon: FaYoutube, href: "/" },
+  {
+    icon: FaFacebookF,
+    href: "https://www.facebook.com/MelamedLawPLLC",
+    label: "Facebook",
+  },
+  {
+    icon: FaInstagram,
+    href: "https://www.instagram.com/melamedlaw_pllc",
+    label: "Instagram",
+  },
+  {
+    icon: FaLinkedinIn,
+    href: "https://www.linkedin.com/company/melamedlawpllc",
+    label: "LinkedIn",
+  },
+  {
+    icon: FaYoutube,
+    href: "https://www.youtube.com/@melamedlawpllc",
+    label: "YouTube",
+  },
 ];
 
 function FooterHeading({ children }: { children: ReactNode }) {
@@ -185,7 +201,9 @@ export default function Footer() {
                   <Link
                     key={index}
                     href={item.href}
-                    aria-label={`Social link ${index + 1}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Melamed Law ${item.label}`}
                     className="flex h-[28px] w-[28px] items-center justify-center rounded-full border border-primary text-primary transition duration-300 hover:bg-primary hover:text-[#001B35]"
                   >
                     <Icon size={13} />
