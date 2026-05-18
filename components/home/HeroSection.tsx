@@ -89,27 +89,31 @@ export default function HeroSection() {
                 By <span className="text-primary">Hurricane Milton?</span>
               </h1>
 
-              <p className="mt-6 max-w-[585px] text-sm font-medium leading-7 text-white sm:text-lg">
+              <p className="mt-5 max-w-[585px] text-[13px] font-medium leading-6 text-white sm:mt-6 sm:text-base sm:leading-7 lg:text-lg">
                 Let Us Help You Get The Compensation You Deserve - While You
                 Focus on Recovery, We Handle the Fight Against Insurance
                 Companies.
               </p>
 
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
                 <Link
                   href="/contact"
-                  className="inline-flex h-11 items-center justify-center gap-3 rounded-[3px] bg-primary px-6 text-[11px] font-bold uppercase tracking-wide text-black shadow-[0_10px_26px_rgba(220,166,78,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#E7B862]"
+                  className="inline-flex h-10 items-center justify-center gap-2 rounded-[3px] bg-primary px-4 text-[10px] font-bold uppercase tracking-wide text-black shadow-[0_10px_26px_rgba(220,166,78,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#E7B862] sm:h-11 sm:gap-3 sm:px-6 sm:text-[11px]"
                 >
-                  <CalendarDays size={14} />
-                  Schedule A Free Case Review
+                  <CalendarDays size={26} />
+                  <span className="text-base md:text-lg">
+                    Schedule A Free Case Review
+                  </span>
                 </Link>
 
                 <a
                   href="tel:+18665551212"
-                  className="inline-flex h-11 items-center justify-center gap-3 rounded-[3px] border border-white/45 px-6 text-[11px] font-bold uppercase tracking-wide text-white transition duration-300 hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-black"
+                  className="inline-flex h-10 items-center justify-center gap-2 rounded-[3px] border border-white/45 px-4 text-[10px] font-bold uppercase tracking-wide text-white transition duration-300 hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-black sm:h-11 sm:gap-3 sm:px-6 sm:text-[11px]"
                 >
-                  <Phone size={14} />
-                  Call Now (866) 555-1212
+                  <Phone size={26} />
+                  <span className="text-base md:text-lg">
+                    Call Now (866) 555-1212
+                  </span>
                 </a>
               </div>
 
@@ -148,19 +152,19 @@ export default function HeroSection() {
                 fill
                 priority
                 sizes="(min-width: 1280px) 650px, (min-width: 1024px) 460px, 90vw"
-                className="object-contain object-bottom object-center"
+                className="object-contain  object-center"
               />
 
               <div className="absolute bottom-8 left-1/2 right-auto z-20 w-[min(86%,250px)] -translate-x-1/2 rounded-[9px] border border-primary bg-[#061A38]/88 px-4 py-3 shadow-2xl backdrop-blur-sm lg:left-auto lg:bottom-24 lg:-right-[50px] lg:w-auto lg:translate-x-0 lg:px-5 lg:py-4 xl:bottom-28 xl:-right-[110px]">
-                <h3 className="text-lg font-bold leading-tight text-primary">
+                <h3 className="text-base md:text-lg font-bold leading-tight text-primary">
                   Aaron D. Melamed, Esq.
                 </h3>
 
-                <p className="mt-2 text-sm font-medium leading-5 text-white">
+                <p className="mt-2 text-base md:text-sm font-medium leading-5 text-white">
                   Founding Attorney
                 </p>
 
-                <p className="text-[13px] font-medium leading-5 text-white">
+                <p className="text-[15px] font-medium leading-5 text-white">
                   25+ Years Experience
                 </p>
               </div>

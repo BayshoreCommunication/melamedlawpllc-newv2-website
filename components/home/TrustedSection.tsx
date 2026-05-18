@@ -95,14 +95,14 @@ export default function TrustedSection() {
                   key={item.title}
                   className="group flex min-h-[210px] flex-col items-center justify-center bg-[#F5F5F5] px-5 py-8 text-center transition duration-300 hover:bg-[#faf8f4] sm:min-h-[230px] lg:px-6"
                 >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full border border-primary/25 bg-primary/5 text-primary transition duration-300 group-hover:scale-105 group-hover:bg-primary group-hover:text-white sm:h-20 sm:w-20">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full  text-primary transition duration-300 group-hover:scale-105  group-hover:text-white sm:h-20 sm:w-20">
                     {imageSrc && (
                       <Image
                         src={imageSrc}
                         alt={item.title}
-                        width={48}
-                        height={48}
-                        className="h-12 w-12 object-contain sm:h-14 sm:w-14"
+                        width={60}
+                        height={60}
+                        className="h-12 w-12 object-contain sm:h-20 sm:w-20"
                       />
                     )}
                   </div>
