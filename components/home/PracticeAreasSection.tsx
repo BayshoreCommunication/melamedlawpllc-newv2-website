@@ -5,59 +5,12 @@ import Link from "next/link";
 import { ArrowRight, CalendarDays } from "lucide-react";
 
 import Container from "components/shared/Container";
-
-const practiceAreas = [
-  {
-    title: "Hurricane Damage Claims",
-    description:
-      "We help homeowners recover compensation for severe hurricane and storm-related damages.",
-    image: "/images/home/practice/img1.png",
-  },
-  {
-    title: "Property Damage Claims",
-    description:
-      "Protect your property rights and recover losses caused by unexpected disasters.",
-    image: "/images/home/practice/img2.png",
-  },
-  {
-    title: "Roof Damage Claims",
-    description:
-      "We fight insurance companies that undervalue or deny roof repair claims.",
-    image: "/images/home/practice/img3.png",
-  },
-  {
-    title: "Fire Damage Claims",
-    description:
-      "Recover compensation for smoke, structural, and fire-related damages.",
-    image: "/images/home/practice/img4.png",
-  },
-  {
-    title: "Flood & Water Damage",
-    description:
-      "We assist property owners facing devastating flood and water damage issues.",
-    image: "/images/home/practice/img5.png",
-  },
-  {
-    title: "Mold Damage Claims",
-    description:
-      "Get legal support when mold damage impacts your home or business.",
-    image: "/images/home/practice/img6.png",
-  },
-  {
-    title: "Commercial Property Claims",
-    description:
-      "Helping businesses recover from property losses and insurance disputes.",
-    image: "/images/home/practice/img7.png",
-  },
-  {
-    title: "Insurance Claim Denials",
-    description:
-      "We challenge unfair insurance denials and maximize your recovery.",
-    image: "/images/home/practice/img8.png",
-  },
-];
-
+import { PRACTICE_DATA } from "data/practice-data";
 export default function PracticeAreasSection() {
+  // all services flatten
+  const allServices = Object.values(PRACTICE_DATA).flatMap(
+    (category) => category.services,
+  );
   return (
     <section className="bg-[#ffffff] py-8 lg:py-16">
       <Container>
@@ -90,7 +43,7 @@ export default function PracticeAreasSection() {
 
           {/* RIGHT SIDE */}
           <div className="space-y-5">
-            {practiceAreas.map((item, index) => (
+            {allServices.map((item, index) => (
               <div
                 key={index}
                 className="group overflow-hidden rounded-[18px] border border-black/5 bg-[#F8F4EE] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(0,0,0,0.08)]"
@@ -118,7 +71,7 @@ export default function PracticeAreasSection() {
 
                     <div className="mt-6">
                       <Link
-                        href="/practice-areas"
+                        href={`/practice-areas/${item.slug}`}
                         className="group/btn inline-flex h-11 items-center gap-3 rounded-[5px] border border-primary/30 bg-white px-5 text-[11px] font-bold uppercase tracking-wide text-black transition-all duration-300 hover:border-primary hover:bg-primary hover:text-black"
                       >
                         Read More
