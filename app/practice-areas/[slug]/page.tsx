@@ -15,11 +15,11 @@ type Service = {
 export async function generateStaticParams() {
   const params: { slug: string }[] = [];
 
-  Object.values(PRACTICE_DATA).forEach((practiceArea) => {
-    practiceArea.services.forEach((service) => {
+  for (const practiceArea of Object.values(PRACTICE_DATA)) {
+    for (const service of practiceArea.services) {
       params.push({ slug: service.slug });
-    });
-  });
+    }
+  }
 
   return params;
 }
@@ -28,13 +28,16 @@ export function generateMetadata({ params }: { params: { slug: string } }) {
   let title = "Practice Areas";
   let description = "Our legal services and practice areas";
 
-  Object.values(PRACTICE_DATA).forEach((practiceArea) => {
-    const service = practiceArea.services.find((s) => s.slug === params.slug);
+  for (const practiceArea of Object.values(PRACTICE_DATA)) {
+    const service = practiceArea.services.find(
+      (s: any) => s.slug === params.slug,
+    );
     if (service) {
       title = `${service.title} | Melamed Law Firm`;
       description = service.description;
+      break;
     }
-  });
+  }
 
   return {
     title,
@@ -47,14 +50,19 @@ export default function PracticeAreaDetailsPage({
 }: {
   params: { slug: string };
 }) {
-  let service: Service | null = null;
+  let foundService: Service | null = null;
 
-  Object.values(PRACTICE_DATA).forEach((practiceArea) => {
-    const found = practiceArea.services.find((s) => s.slug === params.slug);
-    if (found) service = found;
-  });
+  for (const practiceArea of Object.values(PRACTICE_DATA)) {
+    const found = practiceArea.services.find(
+      (s: any) => s.slug === params.slug,
+    );
+    if (found) {
+      foundService = found;
+      break;
+    }
+  }
 
-  if (!service) {
+  if (!foundService) {
     return (
       <div className="flex items-center justify-center min-h-screen">
         <div className="text-center">
@@ -70,15 +78,15 @@ export default function PracticeAreaDetailsPage({
   return (
     <>
       <PageBanner
-        title={service.title}
-        description={service.description}
+        title={foundService.title}
+        description={foundService.description}
         breadcrumbs={[
           { label: "Home", href: "/" },
           { label: "Practice Areas", href: "/practice-areas" },
-          { label: service.title },
+          { label: foundService.title },
         ]}
       />
-      <PracticeAreaDetailsSection service={service} />
+      <PracticeAreaDetailsSection service={foundService} />
       <Footer />
     </>
   );

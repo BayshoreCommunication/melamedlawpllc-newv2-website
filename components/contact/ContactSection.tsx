@@ -65,13 +65,15 @@ export default function ContactSection() {
             {/* ITEMS */}
             <div className="mt-10 space-y-8">
               {/* ITEM */}
-              <div className="flex gap-5">
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40">
-                  <MapPin size={28} className="text-primary" />
+              <div className="group flex gap-5 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/5 text-primary transition-all duration-300 group-hover:border-primary group-hover:bg-primary group-hover:text-white group-hover:shadow-[0_10px_30px_rgba(220,166,78,0.25)]">
+                  <MapPin size={28} />
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-black">Our Office</h4>
+                  <h4 className="text-xl font-bold text-black transition-colors duration-300 group-hover:text-primary">
+                    Our Office
+                  </h4>
 
                   <p className="mt-2 text-base leading-7 text-[#666]">
                     3040 NE 190th St APT 303,
@@ -82,13 +84,15 @@ export default function ContactSection() {
               </div>
 
               {/* ITEM */}
-              <div className="flex gap-5">
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40">
-                  <Phone size={28} className="text-primary" />
+              <div className="group flex gap-5 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/5 text-primary transition-all duration-300 group-hover:border-primary group-hover:bg-primary group-hover:text-white group-hover:shadow-[0_10px_30px_rgba(220,166,78,0.25)]">
+                  <Phone size={28} />
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-black">Phone</h4>
+                  <h4 className="text-xl font-bold text-black transition-colors duration-300 group-hover:text-primary">
+                    Phone
+                  </h4>
 
                   <a
                     href="tel:+19545290695"
@@ -100,13 +104,15 @@ export default function ContactSection() {
               </div>
 
               {/* ITEM */}
-              <div className="flex gap-5">
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40">
-                  <Mail size={28} className="text-primary" />
+              <div className="group flex gap-5 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/5 text-primary transition-all duration-300 group-hover:border-primary group-hover:bg-primary group-hover:text-white group-hover:shadow-[0_10px_30px_rgba(220,166,78,0.25)]">
+                  <Mail size={28} />
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-black">Email</h4>
+                  <h4 className="text-xl font-bold text-black transition-colors duration-300 group-hover:text-primary">
+                    Email
+                  </h4>
 
                   <a
                     href="mailto:info@melamedlawpllc.com"
@@ -118,13 +124,13 @@ export default function ContactSection() {
               </div>
 
               {/* ITEM */}
-              <div className="flex gap-5">
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40">
-                  <Clock3 size={28} className="text-primary" />
+              <div className="group flex gap-5 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/5 text-primary transition-all duration-300 group-hover:border-primary group-hover:bg-primary group-hover:text-white group-hover:shadow-[0_10px_30px_rgba(220,166,78,0.25)]">
+                  <Clock3 size={28} />
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-black">
+                  <h4 className="text-xl font-bold text-black transition-colors duration-300 group-hover:text-primary">
                     Business Hours
                   </h4>
 
@@ -137,13 +143,13 @@ export default function ContactSection() {
               </div>
 
               {/* ITEM */}
-              <div className="flex gap-5">
-                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40">
-                  <ShieldAlert size={28} className="text-primary" />
+              <div className="group flex gap-5 transition-all duration-300 hover:-translate-y-1">
+                <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-primary/40 bg-primary/5 text-primary transition-all duration-300 group-hover:border-primary group-hover:bg-primary group-hover:text-white group-hover:shadow-[0_10px_30px_rgba(220,166,78,0.25)]">
+                  <ShieldAlert size={28} />
                 </div>
 
                 <div>
-                  <h4 className="text-xl font-bold text-black">
+                  <h4 className="text-xl font-bold text-black transition-colors duration-300 group-hover:text-primary">
                     Emergency Claims Assistance
                   </h4>
 
@@ -282,7 +288,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={loading}
-                className="group mt-8 inline-flex h-14 w-full items-center justify-center gap-3 rounded-[12px] bg-primary px-8 text-sm font-bold uppercase tracking-[0.15em] text-black transition-all duration-300 hover:scale-[1.01]"
+                className="group mt-8 inline-flex h-14 w-full items-center justify-center gap-3 rounded-[8px] bg-primary px-8 text-sm font-bold uppercase tracking-[0.15em] text-black transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_12px_30px_rgba(220,166,78,0.35)] hover:-translate-y-1"
               >
                 <Send
                   size={18}

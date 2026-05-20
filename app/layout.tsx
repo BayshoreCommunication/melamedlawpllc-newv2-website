@@ -15,7 +15,7 @@ const crimsonPro = Crimson_Pro({
   variable: "--font-crimson-pro",
 });
 
-const siteUrl = "https://dxg-digital.vercel.app";
+const siteUrl = "https://melamedlawpllc-v2-website.vercel.app/";
 const ogImageUrl = `${siteUrl}/og-image.png`;
 
 /* ---------------- METADATA ---------------- */
@@ -23,7 +23,7 @@ const ogImageUrl = `${siteUrl}/og-image.png`;
 export const metadata: Metadata = {
   title: "Melamed Law Firm",
   description: "Melamed Law Firm Website",
-  metadataBase: new URL("https://www.melamedlawfirm.com"),
+  metadataBase: new URL("https://melamedlawpllc-v2-website.vercel.app/"),
   alternates: {
     canonical: "/",
     languages: {
