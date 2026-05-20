@@ -288,10 +288,10 @@ export default function ContactSection() {
               <button
                 type="submit"
                 disabled={loading}
-                className="group mt-8 inline-flex h-14 w-full items-center justify-center gap-3 rounded-[8px] bg-primary px-8 text-sm font-bold uppercase tracking-[0.15em] text-black transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_12px_30px_rgba(220,166,78,0.35)] hover:-translate-y-1"
+                className="group mt-8 inline-flex h-11 w-full items-center justify-center gap-3 rounded-[3px] bg-primary px-6 text-[11px] font-bold uppercase tracking-wide text-black shadow-[0_10px_26px_rgba(220,166,78,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#E7B862] disabled:cursor-not-allowed disabled:opacity-70"
               >
                 <Send
-                  size={18}
+                  size={20}
                   className="transition-transform duration-300 group-hover:translate-x-1"
                 />
 

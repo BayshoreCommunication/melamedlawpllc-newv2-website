@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown, Phone } from "lucide-react";
 import Container from "components/shared/Container";
@@ -37,7 +37,36 @@ const navItems = [
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (!mobileMenuOpen) {
+      return;
+    }
+
+    const originalBodyOverflow = document.body.style.overflow;
+    const originalHtmlOverflow = document.documentElement.style.overflow;
+
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = originalBodyOverflow;
+      document.documentElement.style.overflow = originalHtmlOverflow;
+    };
+  }, [mobileMenuOpen]);
 
   const isActiveRoute = (href: string) => {
     if (href === "/") {
@@ -48,7 +77,13 @@ export default function Navbar() {
   };
 
   return (
-    <header className="absolute inset-x-0 top-0 z-[100]  bg-transparent text-white">
+    <header
+      className={`fixed inset-x-0 top-0 z-[100] text-white transition-all duration-300 ${
+        isScrolled || mobileMenuOpen
+          ? "bg-[#031735]/95 shadow-[0_12px_35px_rgba(0,0,0,0.18)] backdrop-blur-md"
+          : "bg-transparent"
+      }`}
+    >
       <Container>
         <div className="flex h-[90px] items-center justify-between">
           {/* LEFT */}

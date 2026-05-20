@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import parse from "html-react-parser";
 import { usePathname } from "next/navigation";
 import Container from "components/shared/Container";
 import { PRACTICE_DATA } from "data/practice-data";
@@ -20,24 +21,21 @@ type Props = {
 export default function PracticeAreaDetailsSection({ service }: Props) {
   const pathname = usePathname();
 
-  // Get all services for sidebar
-  const allServices: any[] = [];
-  Object.values(PRACTICE_DATA).forEach((practiceArea) => {
-    allServices.push(...practiceArea.services);
-  });
+  const allServices = Object.values(PRACTICE_DATA).flatMap(
+    (practiceArea) => practiceArea.services,
+  );
 
   return (
-    <section className="bg-[#FFFFFF] py-16 lg:py-24">
+    <section className="bg-white py-8 lg:py-16">
       <Container>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[380px_1fr]">
-          {/* SIDEBAR */}
           <aside className="h-fit rounded-[24px] border border-black/5 bg-white p-8 shadow-sm lg:sticky lg:top-28">
             <h3 className="text-3xl font-bold uppercase text-black">
               Practice Areas
             </h3>
 
             <div className="mt-8 space-y-3">
-              {allServices.slice(0, 10).map((item) => {
+              {allServices.map((item) => {
                 const active = pathname === `/practice-areas/${item.slug}`;
 
                 return (
@@ -55,51 +53,21 @@ export default function PracticeAreaDetailsSection({ service }: Props) {
                 );
               })}
             </div>
-
-            {/* CTA */}
-            {/* <div className="mt-10 rounded-[18px] bg-[#031735] p-7 text-white">
-              <h4 className="text-2xl font-bold">Need Legal Help?</h4>
-
-              <p className="mt-4 text-sm leading-7 text-white/70">
-                Speak with our experienced property damage attorneys today.
-              </p>
-
-              <a
-                href="tel:+18665551212"
-                className="btn-primary mt-6 inline-flex h-12 items-center justify-center rounded-[8px] px-6 text-[11px] font-bold uppercase tracking-wide"
-              >
-                Call Now
-              </a>
-            </div> */}
           </aside>
 
-          {/* CONTENT */}
           <div>
-            {/* IMAGE */}
-            <div className="relative h-[500px] overflow-hidden rounded-[24px]">
+            <div className="relative h-[320px] overflow-hidden rounded-[24px] md:h-[420px] lg:h-[500px]">
               <Image
-                src={service.image}
+                src={service.details_img || service.image}
                 alt={service.title}
                 fill
                 className="object-cover"
+                sizes="(min-width: 1024px) calc(100vw - 460px), 100vw"
               />
             </div>
 
-            {/* TITLE */}
-            <h1 className="mt-10 text-5xl font-bold text-black">
-              {service.title}
-            </h1>
-
-            {/* DESCRIPTION */}
-            <p className="mt-6 text-xl leading-9 text-[#555]">
-              {service.description}
-            </p>
-
-            {/* CONTENT */}
-            <div className="mt-8 space-y-6 text-lg leading-9 text-[#555]">
-              {service.content.split("\n\n").map((paragraph, index) => (
-                <p key={index}>{paragraph.trim()}</p>
-              ))}
+            <div className="mt-8 text-base leading-8 text-[#555] md:text-lg md:leading-9 [&_h2]:mt-9 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:leading-tight [&_h2]:text-black md:[&_h2]:text-[26px] [&_li]:mt-2 [&_p+p]:mt-4 [&_strong]:font-semibold [&_strong]:text-black [&_ul]:mt-4 [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-7">
+              {parse(service.content.trim())}
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function PracticeAreasSection() {
   return (
     <section className="bg-[#ffffff] py-8 lg:py-16">
       <Container>
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[720px_1fr] xl:gap-20">
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,380px)_minmax(0,1fr)] xl:grid-cols-[minmax(0,520px)_minmax(0,1fr)] xl:gap-14">
           {/* LEFT SIDE */}
           <div className="lg:sticky lg:top-28 lg:h-fit">
             <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl">

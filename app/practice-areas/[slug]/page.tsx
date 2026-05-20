@@ -2,6 +2,8 @@ import { PRACTICE_DATA } from "data/practice-data";
 import PageBanner from "components/shared/PageBanner";
 import PracticeAreaDetailsSection from "./PracticeAreaDetailsSection";
 import Footer from "components/layout/Footer";
+import JusticeProcessSection from "components/home/JusticeProcessSection";
+import CTASection from "components/home/CTASection";
 
 type Service = {
   title: string;
@@ -81,13 +83,13 @@ export default function PracticeAreaDetailsPage({
         title={foundService.title}
         description={foundService.description}
         breadcrumbs={[
-          { label: "Home", href: "/" },
           { label: "Practice Areas", href: "/practice-areas" },
           { label: foundService.title },
         ]}
       />
       <PracticeAreaDetailsSection service={foundService} />
-      {/* <Footer /> */}
+      <JusticeProcessSection />
+      <CTASection />
     </>
   );
 }

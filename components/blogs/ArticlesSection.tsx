@@ -2,95 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CalendarDays } from "lucide-react";
+import { ArrowRight, CalendarDays, Newspaper } from "lucide-react";
 
 import Container from "components/shared/Container";
-
-const articles = [
-  {
-    title: "Who Is Responsible for Water Damage in a Florida Condo?",
-
-    description:
-      "Water moves fast inside shared walls, which is why the question 'Who’s liable for water damage in a Florida condo?' becomes incredibly important.",
-
-    image: "/images/blogs/blog1.webp",
-
-    date: "May 15, 2026",
-
-    slug: "water-damage-florida-condo",
-  },
-
-  {
-    title: "How Much Does a Lawyer Cost for a Water Damage Insurance Claim?",
-
-    description:
-      "The question of how much a lawyer costs for a water damage insurance claim in Florida deserves a direct answer.",
-
-    image: "/images/blogs/blog2.webp",
-
-    date: "May 15, 2026",
-
-    slug: "water-damage-lawyer-cost",
-  },
-
-  {
-    title: "Can You Claim Wind Damage on Home Insurance in Florida",
-
-    description:
-      "Florida’s stormy wind doesn’t knock. It sneaks through loose screens, rattles windows, presses the air deeper into your home.",
-
-    image: "/images/blogs/blog3.webp",
-
-    date: "May 15, 2026",
-
-    slug: "wind-damage-home-insurance",
-  },
-
-  {
-    title: "Who Is Responsible for Water Damage in a Florida Condo?",
-
-    description:
-      "Water moves fast inside shared walls, which is why the question 'Who’s liable for water damage in a Florida condo?' becomes incredibly important.",
-
-    image: "/images/blogs/blog4.webp",
-
-    date: "May 15, 2026",
-
-    slug: "water-damage-florida-condo-2",
-  },
-
-  {
-    title: "How Much Does a Lawyer Cost for a Water Damage Insurance Claim?",
-
-    description:
-      "The question of how much a lawyer costs for a water damage insurance claim in Florida deserves a direct answer.",
-
-    image: "/images/blogs/blog5.webp",
-
-    date: "May 15, 2026",
-
-    slug: "water-damage-lawyer-cost-2",
-  },
-
-  {
-    title: "Can You Claim Wind Damage on Home Insurance in Florida",
-
-    description:
-      "Florida’s stormy wind doesn’t knock. It sneaks through loose screens, rattles windows, presses the air deeper into your home.",
-
-    image: "/images/blogs/blog6.webp",
-
-    date: "May 15, 2026",
-
-    slug: "wind-damage-home-insurance-2",
-  },
-];
+import { BLOG_POSTS } from "data/blog-data";
 
 export default function ArticlesSection() {
   return (
-    <section className="bg-[#FFFFF] py-8 lg:py-16">
+    <section className="bg-white py-8 lg:py-16">
       <Container>
-        {/* HEADER */}
         <div className="mx-auto max-w-[900px] text-center">
           <h2 className="text-4xl font-bold uppercase leading-tight text-black md:text-6xl">
             Helpful Insights.{" "}
@@ -103,14 +23,12 @@ export default function ArticlesSection() {
           </p>
         </div>
 
-        {/* GRID */}
         <div className="mt-14 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {articles.map((item, index) => (
-            <div
-              key={index}
+          {BLOG_POSTS.map((item) => (
+            <article
+              key={item.slug}
               className="group overflow-hidden rounded-[20px] border border-black/5 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(0,0,0,0.08)]"
             >
-              {/* IMAGE */}
               <Link
                 href={`/blogs/${item.slug}`}
                 className="relative block aspect-[16/10] overflow-hidden"
@@ -123,83 +41,46 @@ export default function ArticlesSection() {
                 />
               </Link>
 
-              {/* CONTENT */}
               <div className="p-6">
-                {/* DATE */}
                 <div className="flex items-center gap-2 text-sm text-[#777]">
                   <CalendarDays size={15} className="text-primary" />
-
                   <span>{item.date}</span>
                 </div>
 
-                {/* TITLE */}
                 <h3 className="mt-4 line-clamp-2 text-2xl font-bold leading-tight text-black transition-colors duration-300 group-hover:text-primary">
                   <Link href={`/blogs/${item.slug}`}>{item.title}</Link>
                 </h3>
 
-                {/* DESCRIPTION */}
                 <p className="mt-4 line-clamp-3 text-base leading-7 text-[#666]">
                   {item.description}
                 </p>
 
-                {/* BUTTON */}
                 <div className="mt-6">
                   <Link
                     href={`/blogs/${item.slug}`}
-                    className="
-                      group/btn
-                      inline-flex
-                      items-center
-                      gap-3
-                      text-sm
-                      font-bold
-                      uppercase
-                      tracking-[0.15em]
-                      text-primary
-                    "
+                    className="group/btn inline-flex h-11 items-center justify-center gap-3 rounded-[3px] bg-primary px-6 text-[11px] font-bold uppercase tracking-wide text-black shadow-[0_10px_26px_rgba(220,166,78,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#E7B862]"
                   >
-                    <span>Read More</span>
-
-                    <span
-                      className="
-                        flex
-                        h-8
-                        w-8
-                        items-center
-                        justify-center
-                        rounded-full
-                        border
-                        border-primary/30
-                        transition-all
-                        duration-300
-                        group-hover/btn:border-primary
-                        group-hover/btn:bg-primary
-                      "
-                    >
-                      <ArrowRight
-                        size={14}
-                        className="
-                          transition-transform
-                          duration-300
-                          group-hover/btn:translate-x-0.5
-                        "
-                      />
-                    </span>
+                    Read More
+                    <ArrowRight
+                      size={18}
+                      className="transition-transform duration-300 group-hover/btn:translate-x-1"
+                    />
                   </Link>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
-        {/* BUTTON */}
         <div className="mt-14 flex justify-center">
           <button
-            style={{
-              border: "2px solid #DCA64E",
-            }}
-            className="inline-flex h-12 items-center justify-center rounded-[8px] bg-white px-8 text-base font-semibold uppercase tracking-[0.2em] text-black transition-all duration-300 hover:bg-[#DCA64E] md:text-lg"
+            type="button"
+            className="group inline-flex h-11 items-center justify-center gap-3 rounded-[3px] bg-primary px-6 text-[11px] font-bold uppercase tracking-wide text-black shadow-[0_10px_26px_rgba(220,166,78,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#E7B862] sm:px-8"
           >
+            <Newspaper
+              size={20}
+              className="transition-transform duration-300 group-hover:rotate-6"
+            />
             Load More Articles
           </button>
         </div>
