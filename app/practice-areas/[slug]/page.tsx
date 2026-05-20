@@ -87,7 +87,7 @@ export default function PracticeAreaDetailsPage({
         ]}
       />
       <PracticeAreaDetailsSection service={foundService} />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
