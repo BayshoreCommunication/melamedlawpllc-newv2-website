@@ -48,7 +48,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="absolute inset-x-0 top-0 z-[100] border-b border-white/10 bg-transparent text-white">
+    <header className="absolute inset-x-0 top-0 z-[100]  bg-transparent text-white">
       <Container>
         <div className="flex h-[90px] items-center justify-between">
           {/* LEFT */}
