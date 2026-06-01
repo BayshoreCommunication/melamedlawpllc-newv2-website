@@ -59,17 +59,17 @@ function VerticalConnector() {
 
 function HorizontalConnector() {
   return (
-    <div className="hidden items-center lg:flex">
+    <div className="hidden items-center xl:flex">
       {/* LINE */}
-      <span className="h-px w-14 bg-primary/30" />
+      <span className="h-px flex-1 bg-primary/30" />
 
       {/* BOX */}
-      <div className="flex h-8 w-8 items-center justify-center rounded-md border border-primary/40 bg-[#F8F4EC] shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md">
-        <ChevronRight size={14} className="text-primary" />
+      <div className="mx-3 flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-primary/40 bg-[#F8F4EC] shadow-sm transition-all duration-300 hover:scale-105 hover:shadow-md">
+        <ChevronRight size={14} className="text-primary" aria-hidden="true" />
       </div>
 
       {/* LINE */}
-      <span className="h-px w-14 bg-primary/30" />
+      <span className="h-px flex-1 bg-primary/30" />
     </div>
   );
 }
@@ -92,30 +92,30 @@ export default function JusticeProcessSection() {
 
         {/* PROCESS */}
         <div className="mt-10 sm:mt-16">
-          <div className="flex flex-col items-center gap-8 sm:gap-12 lg:flex-row lg:items-start lg:justify-between lg:gap-0">
+          <div className="grid grid-cols-1 justify-items-center gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-0 xl:gap-y-0">
             {steps.map((step, index) => {
               return (
                 <div
                   key={index}
-                  className="flex items-center lg:flex-1 lg:justify-center"
+                  className="relative flex w-full justify-center"
                 >
                   {/* STEP */}
-                  <div className="flex flex-col items-center">
+                  <div className="relative z-10 flex w-full max-w-[300px] flex-col items-center px-2 xl:max-w-none">
                     {/* TOP NUMBER */}
                     <div className="relative z-20 mb-[-18px] flex h-12 w-12 items-center justify-center rounded-full bg-primary text-2xl font-bold text-white shadow-lg sm:mb-[-22px] sm:h-16 sm:w-16 sm:text-3xl">
                       {step.number}
                     </div>
 
                     {/* CIRCLE */}
-                    <div className="group relative flex h-[170px] w-[170px] items-center justify-center rounded-full border-1 border-black/80 bg-[#FFFFFF] transition-all duration-300 hover:-translate-y-2 sm:h-[220px] sm:w-[220px]">
+                    <div className="group relative flex h-[170px] w-[170px] items-center justify-center rounded-full border-1 border-black/80 bg-[#FFFFFF] transition-all duration-300 hover:-translate-y-2 sm:h-[220px] sm:w-[220px] lg:h-[190px] lg:w-[190px] 2xl:h-[220px] 2xl:w-[220px]">
                       {/* ICON */}
-                      <div className="flex h-20 w-20 items-center justify-center rounded-full text-black transition-all duration-300 group-hover:scale-110 sm:h-28 sm:w-28">
+                      <div className="flex h-20 w-20 items-center justify-center rounded-full text-black transition-all duration-300 group-hover:scale-110 sm:h-28 sm:w-28 lg:h-24 lg:w-24 2xl:h-28 2xl:w-28">
                         <Image
                           src={`/${step.icon}`}
                           alt=""
                           width={112}
                           height={112}
-                          className="h-16 w-16 object-contain sm:h-24 sm:w-24"
+                          className="h-16 w-16 object-contain sm:h-24 sm:w-24 lg:h-20 lg:w-20 2xl:h-24 2xl:w-24"
                         />
                       </div>
                     </div>
@@ -137,7 +137,7 @@ export default function JusticeProcessSection() {
 
                   {/* HORIZONTAL CONNECTOR */}
                   {index !== steps.length - 1 && (
-                    <div className="mt-[-140px]">
+                    <div className="absolute left-[calc(50%+95px)] right-[calc(-50%+95px)] top-[137px] hidden xl:block 2xl:left-[calc(50%+110px)] 2xl:right-[calc(-50%+110px)] 2xl:top-[152px]">
                       <HorizontalConnector />
                     </div>
                   )}
