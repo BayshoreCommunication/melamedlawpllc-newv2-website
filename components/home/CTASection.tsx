@@ -96,7 +96,7 @@ export default function CTASection() {
               <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap lg:flex-nowrap">
                 <Link
                   href="/contact"
-                  className="btn-primary inline-flex h-16 min-w-[350px] items-center justify-center gap-3 rounded-[3px] px-6 text-base font-bold uppercase tracking-wide md:text-lg"
+                  className="btn-primary inline-flex h-12 min-w-[350px] items-center justify-center gap-3  px-6 text-base font-bold uppercase tracking-wide md:text-lg"
                 >
                   <CalendarDays size={26} className="shrink-0" />
                   <span className="whitespace-nowrap text-base font-bold uppercase tracking-wide text-black md:text-lg">
@@ -106,7 +106,7 @@ export default function CTASection() {
 
                 <a
                   href="tel:+18665551212"
-                  className="inline-flex h-16 min-w-[300px] items-center justify-center gap-3 rounded-[3px] border border-white/40 bg-transparent px-6 text-base font-bold uppercase tracking-wide text-white transition-all duration-300 hover:border-primary hover:bg-primary hover:text-black md:text-lg"
+                  className="inline-flex h-12 min-w-[300px] items-center justify-center gap-3 rounded-[3px] border border-white/40 bg-transparent px-6 text-base font-bold uppercase tracking-wide text-white transition-all duration-300 hover:border-primary hover:bg-primary hover:text-black md:text-lg"
                 >
                   <Phone size={26} className="shrink-0" />
                   <span className="whitespace-nowrap">

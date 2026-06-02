@@ -69,6 +69,13 @@ textarea {
   font: inherit;
 }
 
+button,
+a.inline-flex,
+.btn-primary,
+.btn-outline {
+  border-radius: 0 !important;
+}
+
 /* ===============================
    Scrollbar
 ================================= */
@@ -119,7 +126,7 @@ textarea {
 
   padding: 14px 28px;
 
-  border-radius: 16px;
+  border-radius: 0;
 
   background: var(--primary);
   color: white;
@@ -180,7 +187,7 @@ textarea {
   color: var(--primary);
 
   padding: 13px 26px;
-  border-radius: 16px;
+  border-radius: 0;
 
   transition: all 300ms ease;
 }
