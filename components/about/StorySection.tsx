@@ -13,9 +13,9 @@ export default function StorySection() {
           {/* LEFT */}
           <div>
             <h2 className="max-w-[820px] text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl xl:text-7xl">
-              Fighting For Justice.
+              Pursuing Justice &
               <br />
-              Delivering <span className="text-primary">Results.</span>
+              Securing Expected <span className="text-primary">Results.</span>
             </h2>
           </div>
 
@@ -47,9 +47,9 @@ export default function StorySection() {
 
             {/* TEXT */}
             <p className="mt-6 max-w-[520px] text-sm font-medium leading-8 text-[#555] sm:text-lg">
-              Our team of experienced attorneys brings unmatched dedication,
-              strategic thinking, and relentless advocacy to every case we
-              handle.
+              Our team of accomplished attorneys brings profound commitment,
+              analytical precision, and rigorous advocacy to every matter we
+              undertake.
             </p>
           </div>
         </div>
@@ -99,9 +99,10 @@ export default function StorySection() {
           {/* DESC */}
           <div>
             <p className="max-w-[980px] text-sm font-medium leading-8 text-[#555] sm:text-xl">
-              Founded on integrity, built on experience, and driven by results -
-              Melamed Law has recovered millions for homeowners and businesses
-              facing insurance disputes and property damage claims.
+              Established on principle, proven through practice, and defined by
+              outcomes, Melamed Law has secured millions for homeowners and
+              businesses confronting insurance disputes and property damage
+              claims.
             </p>
           </div>
         </div>

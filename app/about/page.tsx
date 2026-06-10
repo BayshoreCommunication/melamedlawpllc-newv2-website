@@ -12,7 +12,7 @@ const page = () => {
       <PageBanner
         title="About"
         highlight="Melamed Law"
-        description="Helping clients recover the compensation they deserve after storm, water, and property damage."
+        description="Securing the full recovery clients are owed following storm, water, and property damage."
         backgroundImage="/images/page-banner/page-banner-bg.png"
         breadcrumbs={[
           {

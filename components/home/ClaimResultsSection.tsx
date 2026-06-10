@@ -35,18 +35,10 @@ export default function ClaimResultsSection() {
       <Container>
         {/* HEADING */}
         <div className="mx-auto max-w-[1100px] text-center">
-          <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-white lg:text-6xl xl:text-7xl">
-            Insurance Companies{" "}
-            <span className="text-primary">Delay, Deny,</span> and
-            <br />
-            <span className="text-primary">Underpay</span> Valid Claims Every
-            Day.
+          <h2 className="text-5xl font-bold leading-[1.16] tracking-normal text-white lg:text-6xl xl:text-7xl">
+            Your Insurance Company Frequently Delays, Denies, or Underpays Valid
+            Claims
           </h2>
-
-          <p className="mx-auto mt-6 max-w-[760px] text-sm font-medium leading-7 text-white/70 sm:text-lg">
-            Melamed Law fights to recover the compensation policyholders
-            deserve.
-          </p>
         </div>
 
         {/* CARDS */}
@@ -65,7 +57,7 @@ export default function ClaimResultsSection() {
 
                 <h3 className="mt-7 text-4xl font-bold text-primary">
                   <CountUp
-                    end={item.amount}
+                    end={4250000}
                     duration={2.4}
                     separator=","
                     prefix="$"
@@ -75,24 +67,13 @@ export default function ClaimResultsSection() {
                 </h3>
 
                 <p className="mt-3 text-lg font-semibold uppercase tracking-wide text-white">
-                  {item.subtitle}
+                  Hurricane Damage
                 </p>
 
                 <p className="mt-5 text-sm leading-7 text-white/60">
-                  Full policy recovery for a homeowner after the insurance
-                  company wrongfully delayed and denied the claim.
+                  Maximum policy recovery secured for a homeowner after the
+                  insurance company wrongfully delayed and denied coverage.
                 </p>
-
-                <div className="mt-8 flex items-center justify-between border-t border-white/10 pt-5">
-                  <div className="flex items-center gap-2 text-xs text-white/60">
-                    <MapPin size={14} />
-                    Orlando, FL
-                  </div>
-
-                  <div className="rounded-md border border-primary/30 px-3 py-1 text-[10px] font-bold uppercase tracking-wide text-primary transition-all duration-300 group-hover:border-primary group-hover:bg-primary group-hover:text-[#031735]">
-                    Policy Limit
-                  </div>
-                </div>
               </div>
             );
           })}

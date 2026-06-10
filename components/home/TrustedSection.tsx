@@ -21,8 +21,9 @@ type TrustedStat = {
 const stats: TrustedStat[] = [
   {
     icon: "/images/home/trusted/img1.png",
-    title: "Top Ranked",
-    subtitle: "Personal Injury Law Firm",
+    title: "Top Ranked Credibility ",
+    subtitle:
+      "Ranked among the nation's best personal injury firms by US news.",
     badgeLabel: "U.S. News",
   },
   {
@@ -30,34 +31,35 @@ const stats: TrustedStat[] = [
     number: 4.9,
     decimals: 1,
     title: "Google Rating",
-    subtitle: "Based on 215 Reviews",
+    subtitle: "Backed by 215 five star reviews from real clients.",
     stars: true,
   },
   {
     icon: "/images/home/trusted/img3.png",
     number: 100,
     suffix: "M+",
-    title: "Millions Recovered",
-    subtitle: "For Our Clients",
+    title: "Recovered",
+    subtitle: "Securing the financial support our clients need to reconstruct.",
   },
   {
     icon: "/images/home/trusted/img6.png",
     number: 25,
     suffix: "+",
     title: "Years of Experience",
-    subtitle: "Fighting for Justice",
+    subtitle:
+      "A renowned legal team with over two decades of judiciary success. ",
   },
   {
     icon: "/images/home/trusted/img4.png",
     number: 10000,
     suffix: "+",
-    title: "Clients Helped",
-    subtitle: "And Counting",
+    title: "Families Helped",
+    subtitle: "Guiding thousands of people through their recovery journeys.",
   },
   {
     icon: "/images/home/trusted/img5.png",
-    title: "No Fee",
-    subtitle: "You Pay Nothing Unless We Win",
+    title: "Our No Fee Guarantee",
+    subtitle: "You pay absolutely nothing unless we win your case.",
   },
 ];
 
@@ -76,11 +78,11 @@ export default function TrustedSection() {
     <section className="bg-white py-10 sm:py-12 lg:py-20">
       <Container>
         <div className="overflow-hidden rounded-2xl bg-[#F5F5F5] shadow-[0_20px_60px_rgba(0,0,0,0.06)] md:rounded-[28px]">
-          <div className="flex items-center justify-center gap-4 px-4 py-8 text-center sm:gap-5 md:py-10">
+          <div className="flex items-center justify-start gap-4 px-4 py-8 text-center sm:gap-5 md:py-10">
             <span className="hidden h-px w-14 bg-primary sm:block md:w-16" />
 
             <h2 className="text-base font-bold uppercase leading-7 tracking-[2px] text-[#0B1736] sm:text-xl sm:tracking-[4px] md:text-[26px]">
-              Trusted. Proven. Recognized.
+              Esteemed, Trusted & Renowned
             </h2>
 
             <span className="hidden h-px w-14 bg-primary sm:block md:w-16" />
@@ -93,9 +95,9 @@ export default function TrustedSection() {
               return (
                 <div
                   key={item.title}
-                  className="group flex min-h-[210px] flex-col items-center justify-center bg-[#F5F5F5] px-5 py-8 text-center transition duration-300 hover:bg-[#faf8f4] sm:min-h-[230px] lg:px-6"
+                  className="group flex min-h-[230px] flex-col items-center justify-start bg-[#F5F5F5] px-5 py-8 text-center transition duration-300 hover:bg-[#faf8f4] sm:min-h-[250px] lg:px-6"
                 >
-                  <div className="flex h-16 w-16 items-center justify-center rounded-full  text-primary transition duration-300 group-hover:scale-105  group-hover:text-white sm:h-20 sm:w-20">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full text-primary transition duration-300 group-hover:scale-105 group-hover:text-white sm:h-20 sm:w-20">
                     {imageSrc && (
                       <Image
                         src={imageSrc}

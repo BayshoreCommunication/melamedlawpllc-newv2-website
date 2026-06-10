@@ -60,7 +60,8 @@ export default function AttorneySection() {
           {/* RIGHT */}
           <div>
             <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl">
-              Meet <span className="text-primary">Aaron Melamed, Esq.</span>
+              Meet{" "}
+              <span className="text-primary">Attorney Aaron Melamed, Esq.</span>
             </h2>
 
             <p className="mt-4 text-sm font-bold uppercase tracking-wide text-black">
@@ -68,9 +69,9 @@ export default function AttorneySection() {
             </p>
 
             <p className="mt-6 max-w-[760px] text-sm leading-7 text-[#555] sm:text-base">
-              Before founding Melamed Law, Aaron Melamed spent years defending
-              insurance companies. He saw firsthand how they delay, deny, and
-              underpay valid claims, leaving families and businesses devastated.
+              Prior to establishing this firm, Aaron Melamed defended insurance
+              companies for years. He witnessed firsthand how they delay, deny,
+              and underpay valid claims, devastating families and businesses.
             </p>
 
             <div className="mt-10 space-y-6">

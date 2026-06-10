@@ -7,9 +7,9 @@ const page = () => {
   return (
     <div>
       <PageBanner
-        title="Trusted by"
+        title="Trusted Counsel for"
         highlight="Florida Policyholders"
-        description="See how Melamed Law has helped homeowners and businesses recover the compensation they deserve after denied and underpaid insurance claims."
+        description="Review how Melamed Law secures the full recovery homeowners and businesses are legally owed following denied or underpaid insurance claims."
         backgroundImage="/images/page-banner/page-banner-bg.png"
         breadcrumbs={[
           {
