@@ -10,22 +10,30 @@ const claimCards = [
   {
     icon: Building2,
     amount: 4250000,
-    subtitle: "Hurricane Damage",
+    title: "Hurricane Damage Claims",
+    subtitle:
+      "Recovered compensation for homeowners affected by severe storm and hurricane-related property damage.",
   },
   {
     icon: Wind,
-    amount: 4250000,
-    subtitle: "Hurricane Damage",
+    amount: 3100000,
+    title: "Wind & Roof Damage",
+    subtitle:
+      "Successfully secured payouts for roof failures, wind damage, and structural property losses.",
   },
   {
     icon: Building2,
-    amount: 4250000,
-    subtitle: "Hurricane Damage",
+    amount: 5800000,
+    title: "Commercial Property Claims",
+    subtitle:
+      "Helped business owners recover substantial settlements for commercial building and inventory losses.",
   },
   {
     icon: Shield,
-    amount: 4250000,
-    subtitle: "Hurricane Damage",
+    amount: 2750000,
+    title: "Insurance Dispute Resolution",
+    subtitle:
+      "Fought denied and underpaid insurance claims to achieve fair settlements for policyholders.",
   },
 ];
 
