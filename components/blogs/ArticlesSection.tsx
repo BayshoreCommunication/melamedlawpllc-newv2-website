@@ -13,13 +13,13 @@ export default function ArticlesSection() {
       <Container>
         <div className="mx-auto max-w-[900px] text-center">
           <h2 className="text-4xl font-bold uppercase leading-tight text-black md:text-6xl">
-            Helpful Insights.{" "}
-            <span className="text-primary">Real Answers.</span>
+            Practical Guidance &
+            <span className="text-primary"> Clear Answers</span>
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-[#555]">
-            Practical guides and expert advice to help you protect your rights
-            and your property.
+            Strategic insights and authoritative counsel to help you protect
+            your rights and your property.
           </p>
         </div>
 

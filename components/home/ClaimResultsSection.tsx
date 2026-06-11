@@ -34,7 +34,7 @@ export default function ClaimResultsSection() {
     <section className="relative overflow-visible bg-[#031735] pb-10 pt-16 sm:pb-12 lg:pb-44 lg:pt-24">
       <Container>
         {/* HEADING */}
-        <div className="mx-auto max-w-[1100px] text-center">
+        <div className="mx-auto max-w-[1380px] text-center">
           <h2 className="text-5xl font-bold leading-[1.16] tracking-normal text-white lg:text-6xl xl:text-7xl">
             Your Insurance Company Frequently Delays, Denies, or Underpays Valid
             Claims

@@ -9,7 +9,7 @@ const page = () => {
       <PageBanner
         title="Our"
         highlight="Blogs"
-        description="Focused on protecting policyholders and maximizing recovery for residential and commercial insurance claims."
+        description="We protect policyholders and secure full recovery for residential and commercial insurance claims."
         backgroundImage="/images/page-banner/page-banner-bg.png"
         breadcrumbs={[
           {

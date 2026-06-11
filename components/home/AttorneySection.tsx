@@ -8,23 +8,27 @@ import Container from "components/shared/Container";
 const features = [
   {
     icon: Shield,
-    title: "Dedicated to Property Owners",
-    subtitle: "Thousands of clients helped across Florida.",
+    title: "Consultation",
+    subtitle:
+      "We assess your situation attentively and deliver definitive legal guidance.",
   },
   {
     icon: Scale,
-    title: "Litigator at Heart",
-    subtitle: "Not afraid to take on big insurance companies and win.",
+    title: "Review",
+    subtitle:
+      "We meticulously examine the facts of your claim to build a robust strategy.",
   },
   {
     icon: Trophy,
-    title: "Dedicated to Property Owners",
-    subtitle: "Thousands of clients helped across Florida.",
+    title: "Negotiation",
+    subtitle:
+      "We engage with opposing parties to secure an equitable and optimal resolution.",
   },
   {
     icon: Users,
-    title: "Dedicated to Property Owners",
-    subtitle: "Thousands of clients helped across Florida.",
+    title: "Litigation",
+    subtitle:
+      "Should it become necessary, our team stands fully prepared to protect your rights in court.",
   },
 ];
 
@@ -74,6 +78,13 @@ export default function AttorneySection() {
               and underpay valid claims, devastating families and businesses.
             </p>
 
+            <div className="mt-10">
+              <h3 className="text-3xl font-bold uppercase text-black">
+                Your Insurance Claim,
+                <span className="text-primary"> Guided Step by Step</span>
+              </h3>
+            </div>
+
             <div className="mt-10 space-y-6">
               {features.map((item, index) => {
                 const Icon = item.icon;
@@ -102,19 +113,12 @@ export default function AttorneySection() {
             </div>
 
             <div className="group mt-8 rounded-[18px] border border-primary/30 bg-gradient-to-r from-[#FFF4E0] to-[#FFFFFF] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_20px_45px_rgba(0,0,0,0.08)]">
-              <h3 className="text-xl font-bold text-primary">My Story</h3>
+              <h3 className="text-xl font-bold text-primary">Recovery</h3>
 
               <p className="mt-4 text-sm leading-7 text-[#555] sm:text-base">
-                I have always believed in fairness and standing up for the
-                underdog. That is why I built this firm, to be a voice for those
-                who have been treated unfairly by powerful insurance companies.
-                When you hire us, you get my team, my experience, and my
-                personal commitment to your case.
+                We secure the full financial recovery you are legally owed to
+                help you move ahead with confidence and peace of mind.
               </p>
-
-              <div className="mt-4 text-right text-3xl font-bold leading-none text-primary transition-transform duration-300 group-hover:translate-x-1">
-                &rdquo;
-              </div>
             </div>
           </div>
         </div>

@@ -83,16 +83,17 @@ export default function HeroSection() {
         <div className="w-full pb-14 pt-[96px] sm:pt-[110px] lg:pb-16 lg:pt-[154px]">
           <div className="relative flex flex-col lg:block lg:min-h-[520px]">
             <div className="relative z-10 order-2 mt-8 max-w-[800px] lg:mt-0">
-              <h1 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-white  lg:text-6xl xl:text-7xl">
-                Property Damaged
+              <h1 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-white lg:text-6xl xl:text-7xl">
+                Did Hurricane Milton
                 <br />
-                By <span className="text-primary">Hurricane Milton?</span>
+                Damage Your{" "}
+                <span className="text-primary">Property & Life?</span>
               </h1>
 
               <p className="mt-5 max-w-[585px] text-[13px] font-medium leading-6 text-white sm:mt-6 sm:text-base sm:leading-7 lg:text-lg">
-                Let Us Help You Get The Compensation You Deserve - While You
-                Focus on Recovery, We Handle the Fight Against Insurance
-                Companies.
+                Dedicate your undivided attention to your recovery. We will
+                handle the insurance companies and secure the support you need
+                to recover.
               </p>
 
               <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">

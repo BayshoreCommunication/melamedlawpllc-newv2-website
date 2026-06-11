@@ -78,7 +78,7 @@ export default function TrustedSection() {
     <section className="bg-white py-10 sm:py-12 lg:py-20">
       <Container>
         <div className="overflow-hidden rounded-2xl bg-[#F5F5F5] shadow-[0_20px_60px_rgba(0,0,0,0.06)] md:rounded-[28px]">
-          <div className="flex items-center justify-start gap-4 px-4 py-8 text-center sm:gap-5 md:py-10">
+          <div className="flex items-center justify-center gap-4 px-4 py-8 text-center sm:gap-5 md:py-10">
             <span className="hidden h-px w-14 bg-primary sm:block md:w-16" />
 
             <h2 className="text-base font-bold uppercase leading-7 tracking-[2px] text-[#0B1736] sm:text-xl sm:tracking-[4px] md:text-[26px]">

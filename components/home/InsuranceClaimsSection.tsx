@@ -15,51 +15,53 @@ const topCards = [
   {
     image: "/images/home/insurance/img1.png",
     title: "Unfair Delays",
-    description: "Insurance companies stall and drag out the process.",
+    description:
+      "Insurance companies intentionally stall to drag out the claims process.",
   },
   {
     image: "/images/home/insurance/img2.png",
-    title: "Claim Denials",
-    description: "They wrongfully deny valid claims to protect their profits.",
+    title: "Immediate Intervention",
+    description:
+      "We move quickly to take complete control and eliminate unnecessary waiting.",
   },
   {
     image: "/images/home/insurance/img3.png",
-    title: "Lowball Offers",
+    title: "Unjust Rejections",
     description:
-      "They undervalue your claim and offer far less than you deserve.",
+      "They routinely reject valid claims just to protect corporate profits.",
   },
   {
     image: "/images/home/insurance/img4.png",
-    title: "Policyholder Stress",
+    title: "Fierce Advocacy",
     description:
-      "You're left frustrated, worried, and unsure of your next step.",
+      "We challenge these rejections and force insurance companies to keep promises.",
   },
-] satisfies InsuranceCard[];
+];
 
 const bottomCards = [
   {
     image: "/images/home/insurance/img5.png",
-    title: "We Act Fast",
+    title: "Deficient Offers",
     description:
-      "We move quickly to handle your claim and stop unnecessary delays.",
+      "Insurance companies underestimate your damage and offer much less than needed.",
   },
   {
     image: "/images/home/insurance/img6.png",
-    title: "We Fight Back",
+    title: "Full Recovery",
     description:
-      "We challenge unfair denials and hold insurance companies accountable.",
+      "We advocate fiercely to secure every single dollar you are owed.",
   },
   {
     image: "/images/home/insurance/img7.png",
-    title: "Maximize Recovery",
+    title: "Policyholder Hardship",
     description:
-      "We negotiate aggressively to recover the full compensation you deserve.",
+      "The continuous pressure leaves you feeling completely exhausted, worried, and stuck.",
   },
   {
     image: "/images/home/insurance/img8.png",
-    title: "Stand With You",
+    title: "Absolute Shield",
     description:
-      "We handle the legal fight so you can focus on your life and recovery.",
+      "We handle the entire legal battle so you can focus on healing.",
   },
 ];
 
@@ -122,7 +124,6 @@ export default function InsuranceClaimsSection() {
           <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl xl:text-7xl">
             Insurance Companies{" "}
             <span className="text-primary">Delay, Deny,</span> and
-            <br />
             <span className="text-primary">Underpay</span> Valid Claims Every
             Day.
           </h2>
