@@ -69,7 +69,7 @@ function Connector() {
   return (
     <div className="relative flex h-16 items-center justify-center">
       {/* LINE */}
-      <span className="absolute top-0 h-full w-px bg-primary/30" />
+      <span className="absolute top-0 h-full w-px bg-primary/30 " />
 
       {/* ICON */}
       <div className="relative z-10 flex h-8 w-8 items-center justify-center rounded-md border border-primary bg-[#F8F4EC] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
