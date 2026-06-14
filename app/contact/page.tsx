@@ -5,9 +5,9 @@ import { Contact } from "lucide-react";
 import React from "react";
 
 export const metadata = {
-  title: "Contact Property Damage & Insurance Claims Attorney in Florida | Free Case Review | Melamed Law PLLC",
+  title: "Contact Florida Property Damage Attorney | Free Review",
   description:
-    "Contact Melamed Law PLLC for expert legal representation with your property damage or insurance claims in Florida. Schedule a free consultation with a dedicated Florida Insurance Claims Attorney in Aventura & Ojus, FL today to discuss your case and secure the compensation you deserve.",
+    "Contact Melamed Law PLLC for a free consultation on property damage and insurance claims. Speak with a Florida attorney today.",
   alternates: {
     canonical: "/contact",
     languages: {
