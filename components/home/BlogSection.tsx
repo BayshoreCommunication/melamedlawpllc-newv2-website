@@ -32,7 +32,7 @@ export default function BlogSection() {
               className="group overflow-hidden rounded-[22px] border border-black/5 bg-white shadow-[0_10px_30px_rgba(0,0,0,0.05)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(0,0,0,0.08)]"
             >
               <Link
-                href={`/blogs/${blog.slug}`}
+                href={`/blog/${blog.slug}`}
                 className="relative block h-[280px] overflow-hidden bg-[#F5F1EA]"
               >
                 <Image
@@ -50,7 +50,7 @@ export default function BlogSection() {
                 </div>
 
                 <h3 className="mt-5 line-clamp-2 text-3xl font-bold leading-tight text-black transition-colors duration-300 group-hover:text-primary">
-                  <Link href={`/blogs/${blog.slug}`}>{blog.title}</Link>
+                  <Link href={`/blog/${blog.slug}`}>{blog.title}</Link>
                 </h3>
 
                 <p className="mt-5 line-clamp-3 text-sm leading-7 text-[#5F5F5F] md:text-base">
@@ -59,7 +59,7 @@ export default function BlogSection() {
 
                 <div className="mt-7">
                   <Link
-                    href={`/blogs/${blog.slug}`}
+                    href={`/blog/${blog.slug}`}
                     className="group/btn inline-flex h-11 items-center justify-center gap-3 rounded-[3px] bg-primary px-6 text-[11px] font-bold uppercase tracking-wide text-black shadow-[0_10px_26px_rgba(220,166,78,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#E7B862]"
                   >
                     Read More
@@ -76,7 +76,7 @@ export default function BlogSection() {
 
         <div className="mt-16 flex justify-center">
           <Link
-            href="/blogs"
+            href="/blog"
             className="group inline-flex h-11 items-center justify-center gap-3 rounded-[3px] bg-primary px-6 text-[11px] font-bold uppercase tracking-wide text-black shadow-[0_10px_26px_rgba(220,166,78,0.2)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#E7B862] sm:px-8"
           >
             <Newspaper

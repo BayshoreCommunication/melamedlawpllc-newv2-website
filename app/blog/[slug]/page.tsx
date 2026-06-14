@@ -44,10 +44,9 @@ export default function BlogDetailsPage({ params }: BlogDetailsPageProps) {
       <PageBanner
         title="Blog"
         highlight="Details"
-        description={post.description}
         backgroundImage="/images/page-banner/page-banner-bg.png"
         breadcrumbs={[
-          { label: "Blogs", href: "/blogs" },
+          { label: "Blog", href: "/blog" },
           { label: post.title },
         ]}
       />

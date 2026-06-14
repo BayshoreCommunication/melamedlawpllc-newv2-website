@@ -14,7 +14,7 @@ type BreadcrumbItem = {
 type PageBannerProps = {
   title: string;
   highlight?: string;
-  description: string;
+  description?: string;
   backgroundImage?: string;
   breadcrumbs?: BreadcrumbItem[];
 };
@@ -56,9 +56,11 @@ export default function PageBanner({
           </h2>
 
           {/* DESCRIPTION */}
-          <p className="mt-8 max-w-[650px] text-sm font-medium leading-7 text-white/80 sm:text-lg">
-            {description}
-          </p>
+          {description && (
+            <p className="mt-8 max-w-[650px] text-sm font-medium leading-7 text-white/80 sm:text-lg">
+              {description}
+            </p>
+          )}
         </div>
       </Container>
 
