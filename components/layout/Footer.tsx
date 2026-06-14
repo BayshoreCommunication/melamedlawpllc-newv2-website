@@ -14,29 +14,25 @@ import Container from "components/shared/Container";
 const quickLinks = [
   { label: "About Us", href: "/about" },
   { label: "Practice Areas", href: "/practice-areas" },
-  { label: "Blog", href: "/blogs" },
+  { label: "Blog", href: "/blog" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Contact Us", href: "/contact" },
 ];
 
 const legalAreas = [
-  "Insurance Claim Denials",
-  "Property Damage Claims",
-  "Hurricane Claims",
-  "Bad Faith Insurance",
-  "Commercial Claims",
-  "Policy Disputes",
+  { label: "Hurricane Claims", href: "/practice-areas/hurricane-damage" },
+  { label: "Storm Damage Claims", href: "/practice-areas/storm-damage" },
+  { label: "Windstorm Claims", href: "/practice-areas/windstorm-damage" },
+  { label: "Water Damage Claims", href: "/practice-areas/water-damage" },
+  { label: "Bad Faith Claims", href: "/practice-areas/bad-faith-claims" },
 ];
 
 const practiceAreas = [
-  "Personal Injury",
-  "Slip & Fall",
-  "Car Accidents",
-  "Truck Accidents",
-  "Wrongful Death",
-  "Catastrophic Injuries",
-  "Insurance Bad Faith",
-  "Property Damage",
+  { label: "Roof Damage", href: "/practice-areas/roof-damage" },
+  { label: "Fire Damage", href: "/practice-areas/fire-damage" },
+  { label: "Mold Damage", href: "/practice-areas/mold-damage" },
+  { label: "Hail Damage", href: "/practice-areas/hail-damage" },
+  { label: "Plumbing Damage", href: "/practice-areas/plumbing-damage" },
 ];
 
 const policies = [
@@ -110,8 +106,8 @@ export default function Footer() {
               <FooterHeading>Legal Areas</FooterHeading>
               <ul className="mt-11 space-y-[11px]">
                 {legalAreas.map((item) => (
-                  <li key={item}>
-                    <FooterLink href="/practice-areas">{item}</FooterLink>
+                  <li key={item.label}>
+                    <FooterLink href={item.href}>{item.label}</FooterLink>
                   </li>
                 ))}
               </ul>
@@ -121,8 +117,8 @@ export default function Footer() {
               <FooterHeading>Practice Areas</FooterHeading>
               <ul className="mt-11 space-y-[11px]">
                 {practiceAreas.map((item) => (
-                  <li key={item}>
-                    <FooterLink href="/practice-areas">{item}</FooterLink>
+                  <li key={item.label}>
+                    <FooterLink href={item.href}>{item.label}</FooterLink>
                   </li>
                 ))}
               </ul>
