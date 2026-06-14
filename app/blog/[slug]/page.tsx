@@ -29,6 +29,12 @@ export function generateMetadata({ params }: BlogDetailsPageProps) {
   return {
     title: `${post.title} | Melamed Law Firm`,
     description: post.description,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+      languages: {
+        "en-US": `/blog/${post.slug}`,
+      },
+    },
   };
 }
 
