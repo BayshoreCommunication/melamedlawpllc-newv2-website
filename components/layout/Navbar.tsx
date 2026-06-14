@@ -27,7 +27,7 @@ const navItems = [
   },
   {
     label: "BLOGS",
-    href: "/blogs",
+    href: "/blog",
   },
   {
     label: "CONTACT",
