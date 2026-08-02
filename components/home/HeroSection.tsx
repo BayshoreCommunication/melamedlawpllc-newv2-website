@@ -83,7 +83,7 @@ export default function HeroSection() {
         <div className="w-full pb-14 pt-[96px] sm:pt-[110px] lg:pb-16 lg:pt-[154px]">
           <div className="relative flex flex-col lg:block lg:min-h-[520px]">
             <div className="relative z-10 order-2 mt-8 max-w-[800px] lg:mt-0">
-              <h1 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-white lg:text-6xl 2xl:text-7xl">
+              <h1 className="text-3xl font-bold uppercase leading-[1.16] tracking-normal text-white lg:text-6xl 2xl:text-7xl">
                 Did Hurricane Milton
                 <br />
                 Damage Your{" "}
@@ -156,8 +156,8 @@ export default function HeroSection() {
                 className="object-contain  object-center"
               />
 
-              <div className="absolute bottom-8 left-1/2 right-auto z-20 w-[min(86%,250px)] -translate-x-1/2 rounded-[9px] border border-primary bg-[#061A38]/40 backdrop-blur-md px-4 py-3 shadow-2xl lg:left-auto lg:bottom-24 lg:-right-[50px] lg:w-auto lg:translate-x-0 lg:px-5 lg:py-4 xl:bottom-20 xl:-right-[0px]">
-                <h3 className="text-base md:text-lg font-bold leading-tight text-primary">
+              <div className="absolute bottom-0 left-1/2 right-auto z-20 w-full md:w-[min(86%,250px)] -translate-x-1/2 rounded-[9px] border border-primary bg-[#061A38]/40 backdrop-blur-md px-4 py-3 shadow-2xl lg:left-auto lg:bottom-24 lg:-right-[50px] lg:w-auto lg:translate-x-0 lg:px-5 lg:py-4 xl:bottom-20 xl:-right-[0px] text-center md:text-left ">
+                <h3 className="text-lg md:text-xl font-bold leading-tight text-primary">
                   Aaron D. Melamed, Esq.
                 </h3>
 
@@ -181,7 +181,7 @@ export default function HeroSection() {
                     alt="Google"
                     width={48}
                     height={48}
-                    className="h-[48px] w-[48px]"
+                    className="h-[48px] w-[48px] mx-auto"
                   />
                 </div>
 

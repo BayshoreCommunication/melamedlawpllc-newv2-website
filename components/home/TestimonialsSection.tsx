@@ -119,7 +119,7 @@ function VideoCard({
 
       {/* QUOTE */}
       <div className="mt-6 flex gap-2 px-3">
-        <span className="text-4xl font-bold leading-none text-primary">“</span>
+        <span className="text-3xl font-bold leading-none text-primary">“</span>
 
         <p className="text-lg leading-7 text-black">{item.quote}</p>
       </div>
@@ -135,7 +135,7 @@ export default function TestimonialsSection() {
       <Container>
         {/* HEADING */}
         <div className="mx-auto max-w-[1000px] text-center">
-          <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl 2xl:text-7xl">
+          <h2 className="text-3xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl 2xl:text-7xl">
             Real Clients. <span className="text-primary">Real Results.</span>
           </h2>
 

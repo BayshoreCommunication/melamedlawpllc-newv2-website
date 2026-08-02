@@ -79,7 +79,7 @@ export default function TestimonialsVideoSection() {
       <Container>
         {/* HEADER */}
         <div className="mx-auto max-w-[850px] text-center">
-          <h2 className="text-4xl font-bold uppercase leading-tight text-black md:text-6xl">
+          <h2 className="text-3xl font-bold uppercase leading-tight text-black md:text-6xl">
             Real Clients. <span className="text-primary">Real Results.</span>
           </h2>
 

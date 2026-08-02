@@ -30,7 +30,7 @@ export default function ContactSection() {
     claim_type: "",
     message: "",
   });
-  
+
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [modal, setModal] = useState<{
     isOpen: boolean;
@@ -43,7 +43,9 @@ export default function ContactSection() {
   });
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+    >,
   ) => {
     const { name, value } = e.target;
     setFormValues((prev) => ({ ...prev, [name]: value }));
@@ -63,7 +65,8 @@ export default function ContactSection() {
     } else if (!/\S+@\S+\.\S+/.test(formValues.email)) {
       newErrors.email = "Please enter a valid email address";
     }
-    if (!formValues.claim_type) newErrors.claim_type = "Please select a claim type";
+    if (!formValues.claim_type)
+      newErrors.claim_type = "Please select a claim type";
     if (!formValues.message.trim()) newErrors.message = "Message is required";
 
     if (Object.keys(newErrors).length > 0) {
@@ -89,7 +92,8 @@ export default function ContactSection() {
       setModal({
         isOpen: true,
         type: "success",
-        message: "Your case review request has been sent successfully! We will get back to you shortly.",
+        message:
+          "Your case review request has been sent successfully! We will get back to you shortly.",
       });
 
       // Reset values
@@ -105,7 +109,6 @@ export default function ContactSection() {
       setTimeout(() => {
         setModal((prev) => ({ ...prev, isOpen: false }));
       }, 5000);
-
     } catch (error) {
       console.error(error);
 
@@ -113,7 +116,8 @@ export default function ContactSection() {
       setModal({
         isOpen: true,
         type: "error",
-        message: "Something went wrong while sending your request. Please try again later.",
+        message:
+          "Something went wrong while sending your request. Please try again later.",
       });
 
       // Auto-close modal after 5 seconds
@@ -132,7 +136,7 @@ export default function ContactSection() {
           {/* LEFT SIDE */}
           <div className="rounded-[24px] border border-black/5 bg-white p-7 shadow-[0_10px_40px_rgba(0,0,0,0.06)] md:p-10">
             {/* TITLE */}
-            <h2 className="text-4xl font-bold text-black md:text-5xl">
+            <h2 className="text-3xl font-bold text-black md:text-5xl">
               Contact Information
             </h2>
 
@@ -254,7 +258,7 @@ export default function ContactSection() {
           {/* RIGHT SIDE */}
           <div className="rounded-[24px] border border-black/5 bg-white p-7 shadow-[0_10px_40px_rgba(0,0,0,0.06)] md:p-10">
             {/* TITLE */}
-            <h2 className="text-4xl font-bold text-black md:text-5xl">
+            <h2 className="text-3xl font-bold text-black md:text-5xl">
               Request a Free Consultation
             </h2>
 
@@ -269,7 +273,12 @@ export default function ContactSection() {
             </p>
 
             {/* FORM */}
-            <form ref={formRef} onSubmit={handleSubmit} noValidate className="mt-10">
+            <form
+              ref={formRef}
+              onSubmit={handleSubmit}
+              noValidate
+              className="mt-10"
+            >
               {/* ROW */}
               <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                 {/* NAME */}
@@ -382,7 +391,9 @@ export default function ContactSection() {
                     <option value="Plumbing Damage">Plumbing Damage</option>
                     <option value="Smoke Damage">Smoke Damage</option>
                     <option value="Bad Faith Claims">Bad Faith Claims</option>
-                    <option value="Vandalism And Theft">Vandalism And Theft</option>
+                    <option value="Vandalism And Theft">
+                      Vandalism And Theft
+                    </option>
                   </select>
 
                   <ChevronDown
@@ -453,17 +464,17 @@ export default function ContactSection() {
               animation: modalProgress 5000ms linear forwards;
             }
           `}</style>
-          
+
           {/* Backdrop */}
-          <div 
+          <div
             className="absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300"
             onClick={() => setModal((prev) => ({ ...prev, isOpen: false }))}
           />
-          
+
           {/* Modal Content Card */}
           <div className="relative w-full max-w-md transform overflow-hidden rounded-[24px] border border-black/5 bg-white p-8 shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-300 scale-100 flex flex-col items-center text-center animate-scaleIn">
             {/* Close Button */}
-            <button 
+            <button
               onClick={() => setModal((prev) => ({ ...prev, isOpen: false }))}
               className="absolute right-4 top-4 text-black/40 hover:text-black transition-colors duration-300"
             >
@@ -471,11 +482,13 @@ export default function ContactSection() {
             </button>
 
             {/* Status Icon Wrapper */}
-            <div className={`flex h-20 w-20 items-center justify-center rounded-full mb-6 ${
-              modal.type === "success" 
-                ? "bg-emerald-50 text-emerald-500 border border-emerald-100 shadow-[0_10px_30px_rgba(16,185,129,0.15)] animate-pulse" 
-                : "bg-rose-50 text-rose-500 border border-rose-100 shadow-[0_10px_30px_rgba(244,63,94,0.15)]"
-            }`}>
+            <div
+              className={`flex h-20 w-20 items-center justify-center rounded-full mb-6 ${
+                modal.type === "success"
+                  ? "bg-emerald-50 text-emerald-500 border border-emerald-100 shadow-[0_10px_30px_rgba(16,185,129,0.15)] animate-pulse"
+                  : "bg-rose-50 text-rose-500 border border-rose-100 shadow-[0_10px_30px_rgba(244,63,94,0.15)]"
+              }`}
+            >
               {modal.type === "success" ? (
                 <CheckCircle2 size={40} />
               ) : (
@@ -507,7 +520,7 @@ export default function ContactSection() {
 
             {/* Progress Bar (5s Countdown indicator) */}
             <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-black/5">
-              <div 
+              <div
                 className={`h-full animate-modal-progress ${
                   modal.type === "success" ? "bg-emerald-500" : "bg-rose-500"
                 }`}

@@ -12,7 +12,7 @@ export default function ArticlesSection() {
     <section className="bg-white py-8 lg:py-16">
       <Container>
         <div className="mx-auto max-w-[900px] text-center">
-          <h2 className="text-4xl font-bold uppercase leading-tight text-black md:text-6xl">
+          <h2 className="text-3xl font-bold uppercase leading-tight text-black md:text-6xl">
             Practical Guidance &
             <span className="text-primary"> Clear Answers</span>
           </h2>

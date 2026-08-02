@@ -53,7 +53,7 @@
 
 //           <div className="relative z-10 grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,720px)_1fr] lg:gap-10">
 //             <div className="max-w-[720px]">
-//               <h2 className="text-4xl font-bold uppercase leading-[1.18] tracking-normal text-white sm:text-5xl lg:text-6xl">
+//               <h2 className="text-3xl font-bold uppercase leading-[1.18] tracking-normal text-white sm:text-5xl lg:text-6xl">
 //                 Don&apos;t Let Insurance
 //                 <br />
 //                 Companies{" "}
@@ -207,7 +207,7 @@ export default function CTASection() {
 
           <div className="relative z-10 grid grid-cols-1 items-center gap-10 lg:grid-cols-[minmax(0,720px)_1fr] lg:gap-10">
             <div className="max-w-[720px]">
-              <h2 className="text-4xl font-bold uppercase leading-[1.18] tracking-normal text-white sm:text-5xl lg:text-6xl">
+              <h2 className="text-3xl font-bold uppercase leading-[1.18] tracking-normal text-white sm:text-5xl lg:text-6xl">
                 Trusted Counsel for
                 <br />
                 <span className="text-primary">Florida Policyholders</span>

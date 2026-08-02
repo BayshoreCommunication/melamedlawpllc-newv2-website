@@ -63,7 +63,7 @@ export default function AttorneySection() {
 
           {/* RIGHT */}
           <div>
-            <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl">
+            <h2 className="text-3xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl">
               Meet{" "}
               <span className="text-primary">Attorney Aaron Melamed, Esq.</span>
             </h2>

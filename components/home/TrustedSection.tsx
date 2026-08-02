@@ -118,7 +118,7 @@ export default function TrustedSection() {
                   {item.stars && <Stars />}
 
                   {typeof item.number === "number" ? (
-                    <h3 className="mt-4 text-4xl font-bold leading-none text-[#0B1736] sm:text-5xl">
+                    <h3 className="mt-4 text-3xl font-bold leading-none text-[#0B1736] sm:text-5xl">
                       <CountUp
                         end={item.number}
                         duration={2.5}

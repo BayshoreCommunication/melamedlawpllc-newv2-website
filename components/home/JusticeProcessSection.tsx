@@ -83,7 +83,7 @@ export default function JusticeProcessSection() {
       <Container>
         {/* HEADING */}
         <div className="mx-auto max-w-[1100px] text-center">
-          <h2 className="text-4xl font-bold uppercase leading-[1.16] tracking-normal text-black sm:text-5xl lg:text-6xl 2xl:text-7xl">
+          <h2 className="text-3xl font-bold uppercase leading-[1.16] tracking-normal text-black sm:text-5xl lg:text-6xl 2xl:text-7xl">
             Your Path To Justice,{" "}
             <span className="text-primary">Step By Step</span>
           </h2>
