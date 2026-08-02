@@ -84,10 +84,8 @@ export default function HeroSection() {
           <div className="relative flex flex-col lg:block lg:min-h-[520px]">
             <div className="relative z-10 order-2 mt-8 max-w-[800px] lg:mt-0">
               <h1 className="text-3xl font-bold uppercase leading-[1.16] tracking-normal text-white lg:text-6xl 2xl:text-7xl">
-                Did Hurricane Milton
-                <br />
-                Damage Your{" "}
-                <span className="text-primary">Property & Life?</span>
+                Your Home Is Damaged. Your Insurance Company Is Stalling.{" "}
+                <span className="text-primary">We&apos;re Not.</span>
               </h1>
 
               <p className="mt-5 max-w-[585px] text-[13px] font-medium leading-6 text-white sm:mt-6 sm:text-base sm:leading-7 lg:text-lg">
