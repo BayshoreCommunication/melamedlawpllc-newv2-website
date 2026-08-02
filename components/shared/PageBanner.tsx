@@ -50,7 +50,7 @@ export default function PageBanner({
       <Container className="relative z-20">
         <div className="flex min-h-[300px] flex-col justify-center py-16 pt-[140px] lg:min-h-[380px] lg:py-20 lg:pt-[170px]">
           {/* TITLE */}
-          <h2 className="max-w-[950px] text-5xl font-bold uppercase leading-[1.16] tracking-normal text-white lg:text-6xl xl:text-7xl">
+          <h2 className="max-w-[950px] text-5xl font-bold uppercase leading-[1.16] tracking-normal text-white lg:text-6xl 2xl:text-7xl">
             {title}{" "}
             {highlight && <span className="text-primary">{highlight}</span>}
           </h2>

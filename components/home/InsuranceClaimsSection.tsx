@@ -121,7 +121,7 @@ export default function InsuranceClaimsSection() {
       <Container>
         {/* HEADING */}
         <div className="mx-auto max-w-[1100px] text-center">
-          <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl xl:text-7xl">
+          <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl 2xl:text-7xl">
             Insurance Companies{" "}
             <span className="text-primary">Delay, Deny,</span> and
             <span className="text-primary">Underpay</span> Valid Claims Every

@@ -51,7 +51,10 @@ function VerticalConnector() {
 
       {/* ICON BOX */}
       <div className="relative z-10 flex h-7 w-7 items-center justify-center rounded-md border border-primary/40 bg-[#F8F4EC] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:h-8 sm:w-8">
-        <ChevronDown size={13} className="text-primary sm:h-[14px] sm:w-[14px]" />
+        <ChevronDown
+          size={13}
+          className="text-primary sm:h-[14px] sm:w-[14px]"
+        />
       </div>
     </div>
   );
@@ -80,7 +83,7 @@ export default function JusticeProcessSection() {
       <Container>
         {/* HEADING */}
         <div className="mx-auto max-w-[1100px] text-center">
-          <h2 className="text-4xl font-bold uppercase leading-[1.16] tracking-normal text-black sm:text-5xl lg:text-6xl xl:text-7xl">
+          <h2 className="text-4xl font-bold uppercase leading-[1.16] tracking-normal text-black sm:text-5xl lg:text-6xl 2xl:text-7xl">
             Your Path To Justice,{" "}
             <span className="text-primary">Step By Step</span>
           </h2>

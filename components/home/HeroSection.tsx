@@ -83,7 +83,7 @@ export default function HeroSection() {
         <div className="w-full pb-14 pt-[96px] sm:pt-[110px] lg:pb-16 lg:pt-[154px]">
           <div className="relative flex flex-col lg:block lg:min-h-[520px]">
             <div className="relative z-10 order-2 mt-8 max-w-[800px] lg:mt-0">
-              <h1 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-white lg:text-6xl xl:text-7xl">
+              <h1 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-white lg:text-6xl 2xl:text-7xl">
                 Did Hurricane Milton
                 <br />
                 Damage Your{" "}
@@ -146,7 +146,7 @@ export default function HeroSection() {
               </div>
             </div>
 
-            <div className="relative z-0 order-1 mx-auto h-[390px] w-full max-w-[430px] sm:h-[470px] sm:max-w-[560px] lg:absolute lg:-bottom-8 lg:right-[70px] lg:top-0 lg:mt-0 lg:h-auto lg:w-[460px] lg:max-w-none xl:right-[160px] xl:w-[650px]">
+            <div className="relative z-0 order-1 mx-auto h-[390px] w-full max-w-[430px] sm:h-[470px] sm:max-w-[560px] lg:absolute lg:-bottom-8 lg:right-[70px] lg:top-0 lg:mt-0 lg:h-auto lg:w-[460px] lg:max-w-none xl:right-[0px] 2xl:[right-160px] xl:w-[650px]">
               <Image
                 src="/images/home/hero/attorney.png"
                 alt="Aaron D. Melamed, Esq."
@@ -156,7 +156,7 @@ export default function HeroSection() {
                 className="object-contain  object-center"
               />
 
-              <div className="absolute bottom-8 left-1/2 right-auto z-20 w-[min(86%,250px)] -translate-x-1/2 rounded-[9px] border border-primary bg-[#061A38]/88 px-4 py-3 shadow-2xl backdrop-blur-sm lg:left-auto lg:bottom-24 lg:-right-[50px] lg:w-auto lg:translate-x-0 lg:px-5 lg:py-4 xl:bottom-28 xl:-right-[110px]">
+              <div className="absolute bottom-8 left-1/2 right-auto z-20 w-[min(86%,250px)] -translate-x-1/2 rounded-[9px] border border-primary bg-[#061A38]/40 backdrop-blur-md px-4 py-3 shadow-2xl lg:left-auto lg:bottom-24 lg:-right-[50px] lg:w-auto lg:translate-x-0 lg:px-5 lg:py-4 xl:bottom-20 xl:-right-[0px]">
                 <h3 className="text-base md:text-lg font-bold leading-tight text-primary">
                   Aaron D. Melamed, Esq.
                 </h3>
@@ -174,7 +174,7 @@ export default function HeroSection() {
 
           <div className="relative z-20 mt-8 overflow-hidden rounded-[9px] bg-[#F3EEE7] text-black shadow-[0_22px_55px_rgba(0,0,0,0.22)] lg:mt-0">
             <div className="grid grid-cols-1 divide-y divide-black/10 lg:grid-cols-[265px_repeat(3,1fr)] lg:divide-x lg:divide-y-0">
-              <div className="flex items-center gap-5 p-7 lg:p-8">
+              <div className="flex items-start gap-5 p-7 lg:p-8">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full  shadow-sm">
                   <Image
                     src="/images/google-logo.svg"

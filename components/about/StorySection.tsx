@@ -12,7 +12,7 @@ export default function StorySection() {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[1fr_480px] lg:items-start lg:gap-16">
           {/* LEFT */}
           <div>
-            <h2 className="max-w-[820px] text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl xl:text-7xl">
+            <h2 className="max-w-[820px] text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl 2xl:text-7xl">
               Pursuing Justice &
               <br />
               Securing Expected <span className="text-primary">Results.</span>

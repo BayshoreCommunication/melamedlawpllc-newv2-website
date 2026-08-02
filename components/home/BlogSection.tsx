@@ -14,7 +14,7 @@ export default function BlogSection() {
     <section className="bg-[#F5F1EA] py-8 lg:py-16">
       <Container>
         <div className="mx-auto max-w-[1050px] text-center">
-          <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl xl:text-7xl">
+          <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl 2xl:text-7xl">
             Helpful Insights.{" "}
             <span className="text-primary">Real Answers.</span>
           </h2>

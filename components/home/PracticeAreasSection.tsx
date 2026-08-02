@@ -22,9 +22,9 @@ export default function PracticeAreasSection() {
             </h2>
 
             <p className="mt-6 text-sm font-medium leading-7 text-[#555] sm:text-lg">
-              Professionally handling Property Damage Claims, we're committed to
-              protecting both your Property and your Peace of Mind in times of
-              need.
+              Professionally handling Property Damage Claims, we&apos;re
+              committed to protecting both your Property and your Peace of Mind
+              in times of need.
             </p>
 
             <p className="mt-5 text-sm font-medium leading-7 text-[#555] sm:text-lg">

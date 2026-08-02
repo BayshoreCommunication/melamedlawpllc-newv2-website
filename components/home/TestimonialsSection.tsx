@@ -135,7 +135,7 @@ export default function TestimonialsSection() {
       <Container>
         {/* HEADING */}
         <div className="mx-auto max-w-[1000px] text-center">
-          <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl xl:text-7xl">
+          <h2 className="text-5xl font-bold uppercase leading-[1.16] tracking-normal text-black lg:text-6xl 2xl:text-7xl">
             Real Clients. <span className="text-primary">Real Results.</span>
           </h2>
 

@@ -41,7 +41,7 @@ export default function PracticeAreasSection() {
                   </h3>
 
                   {/* DESCRIPTION */}
-                  <p className="mt-4 text-sm leading-7 text-[#5F5F5F] md:text-base">
+                  <p className="mt-4 text-sm leading-7 text-[#5F5F5F] md:text-base line-clamp-2">
                     {item.description}
                   </p>
 

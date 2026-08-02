@@ -52,7 +52,7 @@ export default function ClaimResultsSection() {
 
         {/* HEADING */}
         <div className="mx-auto max-w-[1300px] text-center">
-          <h2 className="text-5xl font-bold leading-[1.16] tracking-normal text-white lg:text-6xl xl:text-7xl">
+          <h2 className="text-5xl font-bold leading-[1.16] tracking-normal text-white lg:text-6xl 2xl:text-7xl">
             Your Insurance Company Frequently Delays, Denies, or Underpays Valid
             Claims
           </h2>
