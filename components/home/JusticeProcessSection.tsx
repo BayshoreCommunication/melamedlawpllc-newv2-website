@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "use client";
 
 import Image from "next/image";
@@ -57,6 +58,70 @@ function VerticalConnector() {
   );
 }
 
+=======
+"use client";
+
+import Image from "next/image";
+import { ChevronDown, ChevronRight } from "lucide-react";
+
+import Container from "components/shared/Container";
+
+const steps = [
+  {
+    number: "1",
+    icon: "images/home/justice/img1.png",
+    title: "Consultation",
+    description:
+      "We listen, understand your situation, and provide clear legal guidance.",
+  },
+  {
+    number: "2",
+    icon: "images/home/justice/img2.png",
+    title: "Review",
+    description:
+      "We investigate the details, analyze the facts, and build a strong case strategy.",
+  },
+  {
+    number: "3",
+    icon: "images/home/justice/img3.png",
+    title: "Negotiation",
+    description:
+      "We negotiate with opposing parties to pursue a fair and favorable resolution.",
+  },
+  {
+    number: "4",
+    icon: "images/home/justice/img4.png",
+    title: "Litigation",
+    description:
+      "If necessary, we are fully prepared to litigate and advocate for your rights in court.",
+  },
+  {
+    number: "5",
+    icon: "images/home/justice/img5.png",
+    title: "Recovery",
+    description:
+      "We fight to secure the compensation you deserve and help you move forward.",
+  },
+];
+
+function VerticalConnector() {
+  return (
+    <div className="relative flex h-10 items-center justify-center sm:h-14">
+      {/* LINE */}
+      <span className="absolute top-0 h-full w-px bg-primary/30" />
+
+      {/* ICON BOX */}
+      <div className="relative z-10 flex h-7 w-7 items-center justify-center rounded-md border border-primary/40 bg-[#F8F4EC] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:h-8 sm:w-8">
+        <ChevronDown
+          size={13}
+          className="text-primary sm:h-[14px] sm:w-[14px]"
+        />
+      </div>
+    </div>
+  );
+}
+
+>>>>>>> a8010a659af342191772d0e33b76d1ca0e3ed119
 function HorizontalConnector() {
   return (
     <div className="hidden items-center xl:flex">
@@ -73,6 +138,7 @@ function HorizontalConnector() {
     </div>
   );
 }
+<<<<<<< HEAD
 
 export default function JusticeProcessSection() {
   return (
@@ -91,6 +157,26 @@ export default function JusticeProcessSection() {
         </div>
 
         {/* PROCESS */}
+=======
+
+export default function JusticeProcessSection() {
+  return (
+    <section className="overflow-hidden bg-[#FFFFFF] py-8 lg:py-16">
+      <Container>
+        {/* HEADING */}
+        <div className="mx-auto max-w-[1100px] text-center">
+          <h2 className="text-3xl font-bold uppercase leading-[1.16] tracking-normal text-black sm:text-5xl lg:text-6xl 2xl:text-7xl">
+            Your Path To Justice,{" "}
+            <span className="text-primary">Step By Step</span>
+          </h2>
+
+          <p className="mx-auto mt-6 max-w-[700px] text-sm font-medium leading-7 text-[#5C5C5C] sm:text-lg">
+            Your Path to Justice, Step by Step
+          </p>
+        </div>
+
+        {/* PROCESS */}
+>>>>>>> a8010a659af342191772d0e33b76d1ca0e3ed119
         <div className="mt-10 sm:mt-16">
           <div className="grid grid-cols-1 justify-items-center gap-x-6 gap-y-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 xl:gap-x-0 xl:gap-y-0">
             {steps.map((step, index) => {
